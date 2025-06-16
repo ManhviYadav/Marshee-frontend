@@ -1,0 +1,145 @@
+.sidePanel {
+  width: 90px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: white;
+  z-index: 100;
+  margin-left: 2vw;
+  margin-top: 1.5vw;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  color: transparent;
+  height: auto;
+  width: 120%;
+}
+
+.navContainer {
+  cursor: pointer;
+  background: white;
+}
+
+.navLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navItem {
+  background: #adc3ff;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms;
+}
+
+.navItem:hover {
+  background: #95abde;
+}
+
+.navItemFirst {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.navItemLast {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-bottom: 0;
+}
+
+.navIcon {
+  color: transparent;
+}
+
+.navLabel {
+  font-size: 10px;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .sidePanel {
+    width: 85px;
+    margin-left: 1.5vw;
+    margin-right: 6px;
+    padding: 10px 6px;
+  }
+  
+  .navItem {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidePanel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 1000;
+  }
+  
+  .logoContainer {
+    display: none;
+  }
+  
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .navItem {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px !important;
+  }
+  
+  .navItemFirst,
+  .navItemLast {
+    border-radius: 12px !important;
+  }
+  
+  .navIcon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .navLabel {
+    font-size: 8px;
+  }
+} 

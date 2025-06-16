@@ -1,0 +1,90 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  background: white;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: 90px;
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 2.5vw;
+  margin-top: 1.2vw;
+  margin-right: 1.2vw;
+  padding: 2vw;
+  padding-left: 0.1vw;
+  background: #f8f8f8;
+  border-radius: 16px;
+  position: relative;
+  padding-right: 2vw;
+}
+
+.contentContainer {
+  flex: 1;
+  margin-top: 10vw;
+  padding: 16px;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  font-weight: normal;
+}
+
+.container {
+  padding: 0 clamp(1rem, 4vw, 2rem) 2rem clamp(1rem, 4vw, 2rem);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-right: clamp(1rem, 5vw, 3rem);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .mainContent {
+    margin-left: clamp(6rem, 10vw, 8rem);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .mainContent {
+    margin-left: clamp(5rem, 8vw, 6rem);
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainContent {
+    margin-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+    margin-bottom: 80px;
+    margin-top: 2vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  
+  .contentContainer {
+    margin-top: 15vw;
+  }
+} 

@@ -1,0 +1,182 @@
+.navbar {
+  position: absolute;
+  top: 4vw;
+  right: 4vw;
+  z-index: 50;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburgerButton:hover {
+  transform: translateY(-1px);
+}
+
+.hamburgerIcon {
+  font-size: 36px;
+  color: #333333;
+  width: 36px;
+  height: 36px;
+}
+
+.menuBox {
+  background: white;
+  width: 256px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  z-index: 300;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menuBoxOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 310;
+}
+
+.closeButton:hover {
+  transform: translateY(-1px);
+}
+
+.closeIcon {
+  font-size: 36px;
+  color: #333333;
+  width: 36px;
+  height: 36px;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 6vw;
+  padding-bottom: 2vw;
+}
+
+.menuList li {
+  margin: 8px;
+}
+
+.menuLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menuLink:hover {
+  background-color: #f3f4f6;
+}
+
+.loginButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  background: #320505;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin: 32px 0;
+  box-sizing: border-box;
+}
+
+.loginButton:hover {
+  background: #250404;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    top: 2vw;
+    right: 2vw;
+  }
+  
+  .hamburgerButton {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hamburgerIcon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .menuBox {
+    width: 200px;
+    top: -12px;
+    right: -12px;
+  }
+  
+  .closeButton {
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    right: 12px;
+  }
+  
+  .closeIcon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .menuList {
+    padding-top: 10vw;
+    padding-bottom: 1vw;
+  }
+  
+  .menuLink {
+    font-size: 14px;
+    padding: 6px;
+  }
+  
+  .loginButton {
+    font-size: 14px;
+    padding: 6px;
+    margin: 24px 0;
+  }
+} 

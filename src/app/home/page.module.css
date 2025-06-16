@@ -1,0 +1,158 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  background: white;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: 90px;
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 2.5vw;
+  margin-top: 1.2vw;
+  margin-right: 1.2vw;
+  padding: 2vw;
+  padding-left: 0.1vw;
+  background: #f8f8f8;
+  border-radius: 16px;
+  position: relative;
+}
+
+.contentContainer {
+  flex: 1;
+  margin-top: 10vw;
+  padding: 16px;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  font-weight: normal;
+}
+
+.container {
+  padding: 0 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.actionButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.actionButton {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.actionButton:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    margin-left: clamp(5rem, 10vw, 8rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+    margin-bottom: 80px;
+    margin-top: 2vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  
+  .container {
+    padding: 0 1rem 2rem;
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .actionButtons {
+    grid-template-columns: 1fr;
+  }
+  
+  .contentContainer {
+    margin-top: 15vw;
+  }
+} 
